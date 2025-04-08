@@ -69,3 +69,38 @@
     height: 300px;
     width: auto;
 }
+
+.card .contentBox h3{
+font-size: 18px;
+color:#fdfdfd;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.card .contentBox .price{
+font-size: 24px;
+color: #fafafa;
+font-weight: 700;
+letter-spacing: 1px;
+}
+
+.card .contentBox .buy{
+position: relative;
+top: 100px;
+opacity: 0;
+padding: 10px 30px;
+margin-top: 15px;
+color: #151515;
+text-decoration: none;
+background: #3575df;
+border-radius: 30px;
+text-transform: uppercase;
+letter-spacing: 1px;
+transition: 1s;
+}
+
+.card:hover .contentBox .buy{
+top: 0;
+opacity: 1;
+}
