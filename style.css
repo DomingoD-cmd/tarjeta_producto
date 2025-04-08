@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto+Condensed;
+}
+.container-principal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #454545
+}
+.card{
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background-color:#262626;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before{
+    content:"" ;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background-color:#3575df ;
+    transform:skewY(345deg) ;
+    transition: 500ms;
+}
+
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after{
+    content:"ELITE" ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    opacity: 0.1;
+}
+
+.card .imgBox{
+   position: relative; 
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 20px;
+}
+
+.card .contentBox{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .imgBox img{
+    height: 300px;
+    width: auto;
+}
