@@ -10,8 +10,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #454545
+    background: #454545;
+    width: 25%;
+    float: left;
 }
+
 .card{
     position: relative;
     width: 320px;
@@ -19,6 +22,7 @@
     background-color:#262626;
     border-radius: 20px;
     overflow: hidden;
+    margin: 2px;
 }
 
 .card::before{
@@ -39,7 +43,7 @@
 
 .card::after{
     content:"ELITE" ;
-    position: absolute;
+    position:absolute;
     bottom: 0;
     left: 0;
     font-weight: 600;
